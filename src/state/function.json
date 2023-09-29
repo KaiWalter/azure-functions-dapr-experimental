@@ -1,0 +1,24 @@
+{
+  "bindings": [
+    {
+      "type": "httpTrigger",
+      "route": "state/{key}",
+      "methods": ["post"],
+      "authLevel": "anonymous",
+      "name": "req"
+    },
+    {
+      "type": "daprState",
+      "direction": "out",
+      "name": "state",
+      "stateStore": "statestore",
+      "key": "{key}"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    }
+  ],
+  "scriptFile": "../dist/state/index.js"
+}
