@@ -1,0 +1,9 @@
+### Save state
+POST http://localhost:7071/api/state/hello
+
+{
+  "message":"Hello World"
+}
+
+### Retrieve state
+GET http://localhost:7071/api/state/hello
