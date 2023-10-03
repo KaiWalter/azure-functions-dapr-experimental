@@ -2,7 +2,7 @@
 POST http://localhost:7071/api/state/hello
 
 {
-  "message":"Hello World"
+  "value":"Hello World"
 }
 
 ### Retrieve state
